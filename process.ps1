@@ -1,2 +1,3 @@
 get-process
 getmac
+Get-UalDailyUserAccess
