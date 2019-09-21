@@ -12,7 +12,7 @@ Get-DscResource|Measure-Object  #to fetch DSC resources BY default 23 are availa
  Get-CimInstance
 
 Get-CimInstance -namespace root/microsoft/windows -ClassName __NAMESPACE
-get-cimclass -Namespace root/microsoft/windows/DesiredStateConfiguration -ClassName MSFT_* | fw
+get-cimclass -Namespace root/microsoft/windows/DesiredStateConfiguration -ClassName MSFT_* | Format-Wide
 get-cimclass -Namespace root/microsoft/windows/DesiredStateConfiguration -ClassName MSFT_DSCmetaconfiguration | select  -ExpandProperty "cimclassproperties"
 get-cimclass -Namespace root/microsoft/windows/DesiredStateConfiguration -ClassName MSFT_DSCLOcalConfigurationmanager
 
